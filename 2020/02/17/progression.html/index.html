@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en-us" class="lang-en-us">
+    <head><meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="keywords" content="2D,Unity,Gamedev,Student,Programming," /><meta name="description" content="Progression is an Android game made with Unity that I recently released on Google Play store (that is still downloadable on Google play, link to the download at the bottom). It didn&amp;rsquo;t take me a long time for me to develop this game as the whole system was very easy to implement. The main point of this development was to make a simple game in a short duration just so I can get more motivated and get the Unity development wheels rolling again, as I took a break after finishing Sketch Hero." />
+<meta itemprop="description" content="Progression is an Android game made with Unity that I recently released on Google Play store (that is still downloadable on Google play, link to the download at the bottom). It didn&amp;rsquo;t take me a long time for me to develop this game as the whole system was very easy to implement. The main point of this development was to make a simple game in a short duration just so I can get more motivated and get the Unity development wheels rolling again, as I took a break after finishing Sketch Hero." />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<meta itemprop="name" content="Progression - crissNb" />
+<link href="https://hugo-theme-luna.imiku.me/index.xml" title="Progression - crissNb" type="application/rss+xml" rel="alternate" />
+<title>Progression - crissNb</title><link rel="stylesheet" href="/main.68bc78edf3dea3f83e6a3d6dbb1d7c9d1d7251380d0e9c32656c567ba09dd9cb.css" integrity="sha256-aLx47fPeo/g+aj1tux18nR1yUTgNDpwyZWxWe6Cd2cs=" /><meta property="og:site_name" content="Progression - crissNb" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Progression" />
+<meta property="og:description" content="Progression is an Android game made with Unity that I recently released on Google Play store (that is still downloadable on Google play, link to the download at the bottom). It didn&amp;rsquo;t take me a long time for me to develop this game as the whole system was very easy to implement. The main point of this development was to make a simple game in a short duration just so I can get more motivated and get the Unity development wheels rolling again, as I took a break after finishing Sketch Hero." />
+<meta property="og:url" content="https://hugo-theme-luna.imiku.me/2020/02/17/progression.html/" /><meta property="article:publisher" content="https://hugo-theme-luna.imiku.me/2020/02/17/progression.html/" /><meta property="article:published_time" content="2020-02-17T00:00:00&#43;01:00" /><meta property="article:modified_time" content="2022-09-07T14:58:14&#43;02:00" /><meta name="theme-color" content="#dd6065" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-title" content="Progression - crissNb" />
+<meta name="apple-mobile-web-app-status-bar-style" content="white" />
+<meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content="Progression - crissNb" />
+<meta name="twitter:description" content="Progression is an Android game made with Unity that I recently released on Google Play store (that is still downloadable on Google play, link to the download at the bottom). It didn&amp;rsquo;t take me a long time for me to develop this game as the whole system was very easy to implement. The main point of this development was to make a simple game in a short duration just so I can get more motivated and get the Unity development wheels rolling again, as I took a break after finishing Sketch Hero." />
+<meta name="twitter:url" content="https://hugo-theme-luna.imiku.me/2020/02/17/progression.html/" /><link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /><link rel="manifest" href="/manifest.json" /><link href="/icon.png" rel="shortcut icon" />
+<link href="/icon.png" rel="Bookmark" />
+<link rel="apple-touch-icon" href="/icon.png" /><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Progression",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https:\/\/hugo-theme-luna.imiku.me\/2020\/02\/17\/progression.html\/"
+  },"genre": "posts","keywords": "2D","wordcount": 1139 ,
+  "url": "https:\/\/hugo-theme-luna.imiku.me\/2020\/02\/17\/progression.html\/","datePublished": "2020-02-17T00:00:00\u002b01:00","dateModified": "2022-09-07T14:58:14\u002b02:00","author": {
+    "@type": "Person",
+    "name": "crissNb"
+  },"description": "2D Shooter"
+}
+</script><script async src="https://cdn.splitbee.io/sb.js"></script>
+    </head>
+    
+    <body class="dark:bg-darkBg dark:text-darkText">
+        <div class="relative mx-auto shadow-lg md:max-w-4xl xl:max-w-4xl 2xl:max-w-4xl">
+            <div class="main flex flex-col justify-between bg-white dark:bg-darkFg"><header class="relative">
+    <nav id="nav" class="navbar top-0 z-10 flex items-center border-b px-5 py-6 dark:border-darkBorder md:px-10">
+        <div class="route-items flex w-full items-center justify-around"><a
+                    title="Home"
+                    data-active-link="/"
+                    href="/"
+                    class=" relative flex cursor-pointer flex-col items-center text-gray-700 transition duration-300 ease-[ease]"
+                >
+                    <i
+                        class="eva eva-home flex h-8 w-8 items-center justify-center text-3xl leading-none text-gray-500 transition duration-300 ease-[ease] dark:text-darkTextPlaceholder"
+                    ></i>
+                    <span class="mt-1 block text-xs text-gray-400 dark:text-darkText sm:text-sm md:hidden">Home</span>
+                </a><a
+                    title="About"
+                    data-active-link="/about/"
+                    href="/about/"
+                    class=" relative flex cursor-pointer flex-col items-center text-gray-700 transition duration-300 ease-[ease]"
+                >
+                    <i
+                        class="eva eva-heart flex h-8 w-8 items-center justify-center text-3xl leading-none text-gray-500 transition duration-300 ease-[ease] dark:text-darkTextPlaceholder"
+                    ></i>
+                    <span class="mt-1 block text-xs text-gray-400 dark:text-darkText sm:text-sm md:hidden">About</span>
+                </a><a
+                    title="Links"
+                    data-active-link="/links/"
+                    href="/links/"
+                    class=" relative flex cursor-pointer flex-col items-center text-gray-700 transition duration-300 ease-[ease]"
+                >
+                    <i
+                        class="eva eva-people flex h-8 w-8 items-center justify-center text-3xl leading-none text-gray-500 transition duration-300 ease-[ease] dark:text-darkTextPlaceholder"
+                    ></i>
+                    <span class="mt-1 block text-xs text-gray-400 dark:text-darkText sm:text-sm md:hidden">Links</span>
+                </a><a
+                    title="Archives"
+                    data-active-link="/archives/"
+                    href="/archives/"
+                    class=" relative flex cursor-pointer flex-col items-center text-gray-700 transition duration-300 ease-[ease]"
+                >
+                    <i
+                        class="eva eva-bar-chart flex h-8 w-8 items-center justify-center text-3xl leading-none text-gray-500 transition duration-300 ease-[ease] dark:text-darkTextPlaceholder"
+                    ></i>
+                    <span class="mt-1 block text-xs text-gray-400 dark:text-darkText sm:text-sm md:hidden">Archives</span>
+                </a><a
+                    title="GitHub"
+                    data-active-link="/github/"
+                    href="/github/"
+                    class=" relative flex cursor-pointer flex-col items-center text-gray-700 transition duration-300 ease-[ease]"
+                >
+                    <i
+                        class="eva eva-github flex h-8 w-8 items-center justify-center text-3xl leading-none text-gray-500 transition duration-300 ease-[ease] dark:text-darkTextPlaceholder"
+                    ></i>
+                    <span class="mt-1 block text-xs text-gray-400 dark:text-darkText sm:text-sm md:hidden">GitHub</span>
+                </a><a
+                    title="Search"
+                    data-active-link="/search/"
+                    href="/search/"
+                    class=" relative flex cursor-pointer flex-col items-center text-gray-700 transition duration-300 ease-[ease]"
+                >
+                    <i
+                        class="eva eva-search flex h-8 w-8 items-center justify-center text-3xl leading-none text-gray-500 transition duration-300 ease-[ease] dark:text-darkTextPlaceholder"
+                    ></i>
+                    <span class="mt-1 block text-xs text-gray-400 dark:text-darkText sm:text-sm md:hidden">Search</span>
+                </a>
+        </div>
+    </nav><div class="dark-mode-switch absolute right-0 top-0 z-10 cursor-pointer pr-2 pt-2 text-xl leading-none">
+    <i class="eva eva-moon opacity-20 dark:opacity-70"></i>
+</div>
+</header>
+<main class="relative flex flex-grow " id="swup"><style>:root {
+        --font:Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }</style><div class="type-posts layout- w-full"><div class="relative h-full">
+    <div class="relative h-full">
+        <div class="page-view-article flex h-full flex-col bg-white dark:bg-darkFg"><div class="relative"><div>
+    <div class="-mb-2 w-full p-6 pb-0 text-3xl md:px-10">
+        Progression
+    </div>
+</div></div><div class="article-info border-b p-6 pb-3 text-sm dark:border-darkBorder md:px-10">
+    <div>
+        <div class="mb-3 mr-4 inline-flex items-center sm:rounded-full">
+            <i class="eva eva-clock-outline mr-1"></i>
+            <span>
+                <time
+                    title="Published in 17 Feb 2020 00:00:00"datetime="2020-02-17T00:00:00+01:00">17 Feb 2020</time
+                >
+            </span>
+        </div><span class="mb-3 mr-4 inline-flex items-center sm:rounded-full">
+                    <i class="eva eva-edit-2-outline mr-1"></i>
+                    <span>
+                        <time
+                            title="Last modified on: 07 Sep 2022 14:58:14"datetime="2022-09-07T14:58:14+02:00">07 Sep 2022</time
+                        >
+                    </span>
+                </span><div class="mb-3 mr-4 inline-flex items-center sm:rounded-full">
+                <i class="eva eva-flag-outline mr-1"></i>
+                <span>6 mins read</span>
+            </div><div class="mb-3 mr-4 inline-flex items-center sm:rounded-full">
+                <i class="eva eva-bar-chart-outline mr-1"></i>
+                <span>1139 words</span>
+            </div></div><div class="mb-3 flex items-center">
+            <i class="eva eva-pricetags-outline mr-1"></i>
+            <span class="mr-3">Tags</span><a href="/tags/2d" title="2D" class="group mr-2 flex items-center text-sm">
+                    <i class="mr-1 text-gray-400 group-hover:text-theme">#</i>
+                    <span class="text-gray-400 group-hover:text-theme">2D</span>
+                </a></div><div class="mb-3 flex items-center">
+            <i class="eva eva-folder-outline mr-1"></i>
+            <span class="mr-3">Categories</span><a href="/categories/unity" title="Unity" class="group flex items-center text-sm">
+                    <span class="text-gray-400 group-hover:text-theme">Unity</span>
+                    <span class="mx-0.5 group-last:hidden">,</span>
+                </a></div></div><aside
+            class="toc border-b border-gray-300 px-5 py-5 dark:border-darkBorder md:px-10 2xl:fixed 2xl:top-10 2xl:m-0 2xl:-ml-72 2xl:w-72 2xl:border-none 2xl:p-0 2xl:py-4 2xl:pr-4 "
+        >
+            <header>
+                <h1 class="mb-3 text-2xl font-bold 2xl:mb-4">Table of Contents</h1>
+            </header>
+            <nav id="TableOfContents"></nav>
+        </aside><section class="article-content typo relative flex-grow px-6 py-5 md:px-10"><i title="Faster Reads" id="bionicReading" class="absolute right-0 top-0 cursor-pointer p-3"
+            ><svg class="w-4 h-4 fill-current text-gray-400" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="10811" ><path d="M480 192c-19.2 0-32-12.8-32-32v-128c0-19.2 12.8-32 32-32s32 12.8 32 32v128c0 19.2-12.8 32-32 32zM160 1024c-6.4 0-19.2 0-25.6-6.4l-128-128c0-6.4-6.4-19.2-6.4-25.6s6.4-19.2 6.4-25.6l512-512c12.8-6.4 38.4-6.4 51.2 0l128 128c0 6.4 6.4 19.2 6.4 25.6s-6.4 19.2-6.4 25.6l-512 512c-6.4 6.4-19.2 6.4-25.6 6.4z m-83.2-160l83.2 83.2 467.2-467.2-83.2-83.2-467.2 467.2zM992 576h-128c-19.2 0-32-12.8-32-32s12.8-32 32-32h128c19.2 0 32 12.8 32 32s-12.8 32-32 32zM768 288c-6.4 0-19.2 0-25.6-6.4-12.8-12.8-12.8-32 0-44.8l96-96c12.8-12.8 32-12.8 44.8 0s12.8 32 0 44.8l-96 96c0 6.4-12.8 6.4-19.2 6.4zM256 288c-6.4 0-19.2 0-25.6-6.4L134.4 185.6c-6.4-12.8-6.4-38.4 0-51.2s32-12.8 44.8 0l96 96c12.8 12.8 12.8 32 0 44.8 0 12.8-12.8 12.8-19.2 12.8zM864 896c-6.4 0-19.2 0-25.6-6.4l-96-96c-12.8-12.8-12.8-32 0-44.8s32-12.8 44.8 0l96 96c12.8 12.8 12.8 32 0 44.8 0 6.4-12.8 6.4-19.2 6.4z" p-id="10812"></path><path d="M544 640c-6.4 0-19.2 0-25.6-6.4l-128-128c-6.4-12.8-6.4-38.4 0-51.2s32-12.8 44.8 0l128 128c12.8 12.8 12.8 38.4 6.4 51.2-6.4 6.4-19.2 6.4-25.6 6.4z" p-id="10813"></path></svg></i
+        ><p>Progression is an Android game made with Unity that I recently released on Google Play store (that is still downloadable on Google play, link to the download at the bottom). It didn&rsquo;t take me a long time for me to develop this game as the whole system was very easy to implement.
+The main point of this development was to make a simple game in a short duration just so I can get more motivated and get the Unity development wheels rolling again, as I took a break after finishing Sketch Hero.</p>
+<p><figure
+    
+        class="gallery-image" style=" flex-grow:177; flex-basis:426px"
+    
+>
+    <picture class="noscript-hidden"><source data-srcset="/2020/02/17/progression.html/Mainmenu_hue928cefc2d5c76ca0cd8b75dad8b2a7f_10526_1080x0_resize_q95_h2_catmullrom_3.webp 1080w, /2020/02/17/progression.html/Mainmenu_hue928cefc2d5c76ca0cd8b75dad8b2a7f_10526_1440x0_resize_q95_h2_catmullrom_3.webp 1440w" type="image/webp" /><img
+            data-src="/2020/02/17/progression.html/Mainmenu.png"
+            src="/2020/02/17/progression.html/Mainmenu_hue928cefc2d5c76ca0cd8b75dad8b2a7f_10526_ea3559c862b22f31872211bfb0cf85ff.jpg"
+            width="1920"height="1080"
+            data-srcset="/2020/02/17/progression.html/Mainmenu_hue928cefc2d5c76ca0cd8b75dad8b2a7f_10526_1080x0_resize_catmullrom_3.png 1080w, /2020/02/17/progression.html/Mainmenu_hue928cefc2d5c76ca0cd8b75dad8b2a7f_10526_1440x0_resize_catmullrom_3.png 1440w"alt="Main menu"data-zoomable
+            data-lazyload data-lazyload-blur
+        />
+    </picture>
+    <noscript data-lazyload-noscript>
+        <a class="after:hidden" href="/2020/02/17/progression.html/Mainmenu.png" target="_blank" rel="noopener noreferrer">
+            <picture><source srcset="/2020/02/17/progression.html/Mainmenu_hue928cefc2d5c76ca0cd8b75dad8b2a7f_10526_1080x0_resize_q95_h2_catmullrom_3.webp 1080w, /2020/02/17/progression.html/Mainmenu_hue928cefc2d5c76ca0cd8b75dad8b2a7f_10526_1440x0_resize_q95_h2_catmullrom_3.webp 1440w" type="image/webp" /><img
+                    src="/2020/02/17/progression.html/Mainmenu.png"width="1920"height="1080"srcset="/2020/02/17/progression.html/Mainmenu_hue928cefc2d5c76ca0cd8b75dad8b2a7f_10526_1080x0_resize_catmullrom_3.png 1080w, /2020/02/17/progression.html/Mainmenu_hue928cefc2d5c76ca0cd8b75dad8b2a7f_10526_1440x0_resize_catmullrom_3.png 1440w"alt="Main menu"/>
+            </picture>
+        </a>
+    </noscript><figcaption>Main menu</figcaption></figure></p>
+<p>Progression is a simple arcade shooter. There are a total of 75 waves (originally 50, but I got requested to make more levels, as they were too &ldquo;easy&rdquo; to complete), and the goal of the game is to defeat all the enemies that spawn in each wave and reach 75 waves. The difficulty of the wave progress as it gets higher and the player needs to destroy them all by progressing them. Kind of like an RPG game, except the options, are limited. The player can upgrade their character by an in-game shop which they can use with in-game money they earn by destroying enemies in the game. Another option for an upgrade is picking up &ldquo;upgrade&rdquo; items within the match. This gives the player a more significant upgrade, but this effect is gone once the player exits the match.
+It is near impossible for a player to complete the game in the first match. The whole concept was to grow their character throughout different matches and upgrade their character using the money they earn.</p>
+<p>I originally designed this game to be extremely difficult to complete. I had a hard time balancing each enemy&rsquo;s ability in the match. I should plan out all the features of the game as well as the enemy&rsquo;s stats before I make them. I didn&rsquo;t genuinely spend a lot of time planning the game before I develop, unlike the other ones, because back then I thought the development process would only take 3 - 4 weeks (I finished all the core mechanics within 2 weeks, but the polishing and fixing bugs took longer).</p>
+<p>I used the object pooling system to spawn different enemies and sort of &ldquo;recycle&rdquo; them when they died. Because the platform I was targeting was Android, optimization was mandatory for this project as well. I couldn&rsquo;t just instantiate (spawn) a new object whenever the enemy spawns or destroy an enemy object completely. The code that gets ran in the background when initialized, destroyed would degrade the performance too much.
+I faced a problem, however. Because I was using an object pooling system, there had to be enough enemies spawned beforehand. This means that, if I want to spawn 30 A enemies in a match, I need to have 30 A enemies in the beginning of the game. This might sound a bit silly and obvious, but here&rsquo;s the problem:
+I didn&rsquo;t want to fill the wave up with the same type of enemy. So I made different types of enemies (I used different shapes so like: square, hexagon, circle, etc.). Now let&rsquo;s say I want to spawn 30 enemies in total, but I want to randomly select enemies between square and circle. Meaning some enemies from total enemies spawned are square while others are circle. Because this is all handled randomly there are a tiny odd that only square enemy can spawn. This means that I would need 30 square enemies in the pool to fill up the match with 30 square enemies (requested). This might not be that big of a problem, but what if I want to add more enemies in a wave and more variety of enemy types? I would need to spawn in so many enemies in so many different types beforehand and at some point, the object pooling system wouldn&rsquo;t just work.
+One solution that I found was to check if the enemy is not available (&ldquo;sold out&rdquo;, there are no enemies left in object pool to spawn) and if not, spawn a different enemy. Unfortunately, I ended up not using this method, because the code was just getting too messy and I just didn&rsquo;t want to touch it any further. I concluded with a dirty way of handling this which was just spawning a bunch of enemies beforehand and <em>HOPING</em> it wouldn&rsquo;t result in such odd that enemy type won&rsquo;t get &ldquo;sold out&rdquo;.</p>
+<p>I didn&rsquo;t bother with the UI that much. UI could&rsquo;ve improved by A LOT in multiple aspects&hellip;</p>
+<p><figure
+    
+        class="gallery-image" style=" flex-grow:177; flex-basis:426px"
+    
+>
+    <picture class="noscript-hidden"><source data-srcset="/2020/02/17/progression.html/Upgrademenu_hu2afcabcce18fa4833e6c20dcae09e124_16289_1080x0_resize_q95_h2_catmullrom_3.webp 1080w, /2020/02/17/progression.html/Upgrademenu_hu2afcabcce18fa4833e6c20dcae09e124_16289_1440x0_resize_q95_h2_catmullrom_3.webp 1440w" type="image/webp" /><img
+            data-src="/2020/02/17/progression.html/Upgrademenu.png"
+            src="/2020/02/17/progression.html/Upgrademenu_hu2afcabcce18fa4833e6c20dcae09e124_16289_81d45fb2885d06e094e0af1922a21770.jpg"
+            width="1920"height="1080"
+            data-srcset="/2020/02/17/progression.html/Upgrademenu_hu2afcabcce18fa4833e6c20dcae09e124_16289_1080x0_resize_catmullrom_3.png 1080w, /2020/02/17/progression.html/Upgrademenu_hu2afcabcce18fa4833e6c20dcae09e124_16289_1440x0_resize_catmullrom_3.png 1440w"alt="Upgrade menu"data-zoomable
+            data-lazyload data-lazyload-blur
+        />
+    </picture>
+    <noscript data-lazyload-noscript>
+        <a class="after:hidden" href="/2020/02/17/progression.html/Upgrademenu.png" target="_blank" rel="noopener noreferrer">
+            <picture><source srcset="/2020/02/17/progression.html/Upgrademenu_hu2afcabcce18fa4833e6c20dcae09e124_16289_1080x0_resize_q95_h2_catmullrom_3.webp 1080w, /2020/02/17/progression.html/Upgrademenu_hu2afcabcce18fa4833e6c20dcae09e124_16289_1440x0_resize_q95_h2_catmullrom_3.webp 1440w" type="image/webp" /><img
+                    src="/2020/02/17/progression.html/Upgrademenu.png"width="1920"height="1080"srcset="/2020/02/17/progression.html/Upgrademenu_hu2afcabcce18fa4833e6c20dcae09e124_16289_1080x0_resize_catmullrom_3.png 1080w, /2020/02/17/progression.html/Upgrademenu_hu2afcabcce18fa4833e6c20dcae09e124_16289_1440x0_resize_catmullrom_3.png 1440w"alt="Upgrade menu"/>
+            </picture>
+        </a>
+    </noscript><figcaption>Upgrade menu</figcaption></figure></p>
+<p>Something that I enjoyed making during the development was boss fights. It was the first time for me to make bosses, so I wasn&rsquo;t sure how I should start. Turned out to be easier and better than I thought/expected. Although, I wouldn&rsquo;t say I&rsquo;m 100% satisfied with the product. There are things that I want to improve/could&rsquo;ve improved on.</p>
+<p><figure
+    
+        class="gallery-image" style=" flex-grow:177; flex-basis:426px"
+    
+>
+    <picture class="noscript-hidden"><source data-srcset="/2020/02/17/progression.html/Bossfight_hud349e548bfc2c7ae6a20376953b7800a_56827_1080x0_resize_q95_h2_catmullrom_3.webp 1080w, /2020/02/17/progression.html/Bossfight_hud349e548bfc2c7ae6a20376953b7800a_56827_1440x0_resize_q95_h2_catmullrom_3.webp 1440w" type="image/webp" /><img
+            data-src="/2020/02/17/progression.html/Bossfight.png"
+            src="/2020/02/17/progression.html/Bossfight_hud349e548bfc2c7ae6a20376953b7800a_56827_0ec7802b9192290cba13643af8ec1b04.jpg"
+            width="1920"height="1080"
+            data-srcset="/2020/02/17/progression.html/Bossfight_hud349e548bfc2c7ae6a20376953b7800a_56827_1080x0_resize_catmullrom_3.png 1080w, /2020/02/17/progression.html/Bossfight_hud349e548bfc2c7ae6a20376953b7800a_56827_1440x0_resize_catmullrom_3.png 1440w"alt="Bossfight"data-zoomable
+            data-lazyload data-lazyload-blur
+        />
+    </picture>
+    <noscript data-lazyload-noscript>
+        <a class="after:hidden" href="/2020/02/17/progression.html/Bossfight.png" target="_blank" rel="noopener noreferrer">
+            <picture><source srcset="/2020/02/17/progression.html/Bossfight_hud349e548bfc2c7ae6a20376953b7800a_56827_1080x0_resize_q95_h2_catmullrom_3.webp 1080w, /2020/02/17/progression.html/Bossfight_hud349e548bfc2c7ae6a20376953b7800a_56827_1440x0_resize_q95_h2_catmullrom_3.webp 1440w" type="image/webp" /><img
+                    src="/2020/02/17/progression.html/Bossfight.png"width="1920"height="1080"srcset="/2020/02/17/progression.html/Bossfight_hud349e548bfc2c7ae6a20376953b7800a_56827_1080x0_resize_catmullrom_3.png 1080w, /2020/02/17/progression.html/Bossfight_hud349e548bfc2c7ae6a20376953b7800a_56827_1440x0_resize_catmullrom_3.png 1440w"alt="Bossfight"/>
+            </picture>
+        </a>
+    </noscript><figcaption>Bossfight</figcaption></figure></p>
+<p>I also added ads (supported by Unity) for this game. I didn&rsquo;t expect to make money from it at all (in fact, I didn&rsquo;t &ldquo;make&rdquo; any. I got around 3 dollars USD by ads, but I couldn&rsquo;t withdraw it since the withdrawal process is only allowed once you earn more than 100 dollars USD. That&rsquo;s how Unity ad system works I guess&hellip;) but I just wanted to try and see how it works. Turned out to be easier than I was expecting.</p>
+<p>I undoubtedly realized how important the whole planning procedure was throughout this project. Not only I could&rsquo;ve avoided a lot of bugs that happened just because I wasn&rsquo;t thinking about it enough (like the enemy spawning issue I addressed earlier in the post), but also saved a lot of time. This project might have finished under a month if I had done proper planning.
+I don&rsquo;t want to touch on this project any further just because I didn&rsquo;t <strong>plan</strong> on working on it once I&rsquo;m done. Not only that, due to the lacking <strong>planning</strong> I did, I just don&rsquo;t want to go over it anymore.</p>
+<p>As I mentioned, it only took around 3 - 4 months in total to create this game from scratch, all the way to polishing. Sure, the game could&rsquo;ve been made in a shorter period, just because of how simple it is, but I was bothered by other more important priorities of my life when I was developing. This might sound like an excuse (which I&rsquo;m not denying) but I could only work on the game for around 5 hours per week.</p>
+<p>But to be honest, overall the game could&rsquo;ve improved in a lot of different ways. I feel like I wasn&rsquo;t giving my best for this project. I&rsquo;m going to spend more time polishing and finishing the game better next time.</p>
+<p>Here are some gameplay screenshots:</p>
+<p><figure
+    
+        class="gallery-image" style=" flex-grow:177; flex-basis:426px"
+    
+>
+    <picture class="noscript-hidden"><source data-srcset="/2020/02/17/progression.html/Gameplay01_hu270ef3279ff744257fa739c92ad719f4_53800_1080x0_resize_q95_h2_catmullrom_3.webp 1080w, /2020/02/17/progression.html/Gameplay01_hu270ef3279ff744257fa739c92ad719f4_53800_1440x0_resize_q95_h2_catmullrom_3.webp 1440w" type="image/webp" /><img
+            data-src="/2020/02/17/progression.html/Gameplay01.png"
+            src="/2020/02/17/progression.html/Gameplay01_hu270ef3279ff744257fa739c92ad719f4_53800_91ecf62b193d210ed7f4c8be255853ee.jpg"
+            width="1920"height="1080"
+            data-srcset="/2020/02/17/progression.html/Gameplay01_hu270ef3279ff744257fa739c92ad719f4_53800_1080x0_resize_catmullrom_3.png 1080w, /2020/02/17/progression.html/Gameplay01_hu270ef3279ff744257fa739c92ad719f4_53800_1440x0_resize_catmullrom_3.png 1440w"alt="Gameplay"data-zoomable
+            data-lazyload data-lazyload-blur
+        />
+    </picture>
+    <noscript data-lazyload-noscript>
+        <a class="after:hidden" href="/2020/02/17/progression.html/Gameplay01.png" target="_blank" rel="noopener noreferrer">
+            <picture><source srcset="/2020/02/17/progression.html/Gameplay01_hu270ef3279ff744257fa739c92ad719f4_53800_1080x0_resize_q95_h2_catmullrom_3.webp 1080w, /2020/02/17/progression.html/Gameplay01_hu270ef3279ff744257fa739c92ad719f4_53800_1440x0_resize_q95_h2_catmullrom_3.webp 1440w" type="image/webp" /><img
+                    src="/2020/02/17/progression.html/Gameplay01.png"width="1920"height="1080"srcset="/2020/02/17/progression.html/Gameplay01_hu270ef3279ff744257fa739c92ad719f4_53800_1080x0_resize_catmullrom_3.png 1080w, /2020/02/17/progression.html/Gameplay01_hu270ef3279ff744257fa739c92ad719f4_53800_1440x0_resize_catmullrom_3.png 1440w"alt="Gameplay"/>
+            </picture>
+        </a>
+    </noscript><figcaption>Gameplay</figcaption></figure>
+<figure
+    
+        class="gallery-image" style=" flex-grow:177; flex-basis:426px"
+    
+>
+    <picture class="noscript-hidden"><source data-srcset="/2020/02/17/progression.html/Gameplay02_hudda10b10ee3ca160a9408cc603188d6d_56474_1080x0_resize_q95_h2_catmullrom_3.webp 1080w, /2020/02/17/progression.html/Gameplay02_hudda10b10ee3ca160a9408cc603188d6d_56474_1440x0_resize_q95_h2_catmullrom_3.webp 1440w" type="image/webp" /><img
+            data-src="/2020/02/17/progression.html/Gameplay02.png"
+            src="/2020/02/17/progression.html/Gameplay02_hudda10b10ee3ca160a9408cc603188d6d_56474_0a2fc314c3fb84d128fc996b88f4976c.jpg"
+            width="1920"height="1080"
+            data-srcset="/2020/02/17/progression.html/Gameplay02_hudda10b10ee3ca160a9408cc603188d6d_56474_1080x0_resize_catmullrom_3.png 1080w, /2020/02/17/progression.html/Gameplay02_hudda10b10ee3ca160a9408cc603188d6d_56474_1440x0_resize_catmullrom_3.png 1440w"alt="Gameplay2"data-zoomable
+            data-lazyload data-lazyload-blur
+        />
+    </picture>
+    <noscript data-lazyload-noscript>
+        <a class="after:hidden" href="/2020/02/17/progression.html/Gameplay02.png" target="_blank" rel="noopener noreferrer">
+            <picture><source srcset="/2020/02/17/progression.html/Gameplay02_hudda10b10ee3ca160a9408cc603188d6d_56474_1080x0_resize_q95_h2_catmullrom_3.webp 1080w, /2020/02/17/progression.html/Gameplay02_hudda10b10ee3ca160a9408cc603188d6d_56474_1440x0_resize_q95_h2_catmullrom_3.webp 1440w" type="image/webp" /><img
+                    src="/2020/02/17/progression.html/Gameplay02.png"width="1920"height="1080"srcset="/2020/02/17/progression.html/Gameplay02_hudda10b10ee3ca160a9408cc603188d6d_56474_1080x0_resize_catmullrom_3.png 1080w, /2020/02/17/progression.html/Gameplay02_hudda10b10ee3ca160a9408cc603188d6d_56474_1440x0_resize_catmullrom_3.png 1440w"alt="Gameplay2"/>
+            </picture>
+        </a>
+    </noscript><figcaption>Gameplay2</figcaption></figure>
+<figure
+    
+        class="gallery-image" style=" flex-grow:177; flex-basis:426px"
+    
+>
+    <picture class="noscript-hidden"><source data-srcset="/2020/02/17/progression.html/Gameplay03_huac13948b1fc5919be0a566bd18b000f5_47284_1080x0_resize_q95_h2_catmullrom_3.webp 1080w, /2020/02/17/progression.html/Gameplay03_huac13948b1fc5919be0a566bd18b000f5_47284_1440x0_resize_q95_h2_catmullrom_3.webp 1440w" type="image/webp" /><img
+            data-src="/2020/02/17/progression.html/Gameplay03.png"
+            src="/2020/02/17/progression.html/Gameplay03_huac13948b1fc5919be0a566bd18b000f5_47284_8b1574637949317cc4dfe711ad495b5a.jpg"
+            width="1920"height="1080"
+            data-srcset="/2020/02/17/progression.html/Gameplay03_huac13948b1fc5919be0a566bd18b000f5_47284_1080x0_resize_catmullrom_3.png 1080w, /2020/02/17/progression.html/Gameplay03_huac13948b1fc5919be0a566bd18b000f5_47284_1440x0_resize_catmullrom_3.png 1440w"alt="Gameplay3"data-zoomable
+            data-lazyload data-lazyload-blur
+        />
+    </picture>
+    <noscript data-lazyload-noscript>
+        <a class="after:hidden" href="/2020/02/17/progression.html/Gameplay03.png" target="_blank" rel="noopener noreferrer">
+            <picture><source srcset="/2020/02/17/progression.html/Gameplay03_huac13948b1fc5919be0a566bd18b000f5_47284_1080x0_resize_q95_h2_catmullrom_3.webp 1080w, /2020/02/17/progression.html/Gameplay03_huac13948b1fc5919be0a566bd18b000f5_47284_1440x0_resize_q95_h2_catmullrom_3.webp 1440w" type="image/webp" /><img
+                    src="/2020/02/17/progression.html/Gameplay03.png"width="1920"height="1080"srcset="/2020/02/17/progression.html/Gameplay03_huac13948b1fc5919be0a566bd18b000f5_47284_1080x0_resize_catmullrom_3.png 1080w, /2020/02/17/progression.html/Gameplay03_huac13948b1fc5919be0a566bd18b000f5_47284_1440x0_resize_catmullrom_3.png 1440w"alt="Gameplay3"/>
+            </picture>
+        </a>
+    </noscript><figcaption>Gameplay3</figcaption></figure></p>
+<p>Download Link: <a
+    class="link"
+    href="https://play.google.com/store/apps/details?id=com.FourFootGames.Progression"target="_blank" rel="noopener">https://play.google.com/store/apps/details?id=com.FourFootGames.Progression</a
+>
+</p>
+</section><div class="px-6 pb-5 pt-4 text-center text-xl text-gray-500 md:px-10 md:pb-10 md:pt-14"><a
+                class="mr-4 inline-flex h-5 w-5 items-center"
+                title="Share to twitter"
+                href="https://twitter.com/share?&text=Progression%20is%20an%20Android%20game%20made%20with%20Unity%20that%20I%20recently%20released%20on%20Google%20Play%20store%20%28that%20is%20still%20downloadable%20on%20Google%20play,%20link%20to%20the%20download%20at%20the%20bottom%29.%20It%20didn&amp;rsquo;t%20take%20me%20a%20long%20time%20for%20me%20to%20develop%20this%20game%20as%20the%20whole%20system%20was%20very%20easy%20to%20implement.%20The%20main%20point%20of%20this%20development%20was%20to%20make%20a%20simple%20game%20in%20a%20short%20duration%20just%20so%20I%20can%20get%20more%20motivated%20and%20get%20the%20Unity%20development%20wheels%20rolling%20again,%20as%20I%20took%20a%20break%20after%20finishing%20Sketch%20Hero.&url=https://hugo-theme-luna.imiku.me/2020/02/17/progression.html/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="eva eva-twitter hover:text-theme"></i
+            ></a><a
+                class="mr-4 inline-flex h-5 w-5 items-center"
+                title="Share to facebook"
+                href="https://www.facebook.com/sharer.php?u=https://hugo-theme-luna.imiku.me/2020/02/17/progression.html/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="eva eva-facebook hover:text-theme"></i
+            ></a><a
+                class="mr-4 inline-flex h-5 w-5 items-center"
+                title="Share to weibo"
+                href="https://service.weibo.com/share/share.php?url=https://hugo-theme-luna.imiku.me/2020/02/17/progression.html/&title=Progression&sudaref=hugo-theme-luna.imiku.me"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <svg
+                    class="inline-block h-5 w-5 fill-current hover:text-theme"
+                    viewBox="0 0 1193 1024"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    p-id="2681"
+                    width="200"
+                    height="200"
+                >
+                    <path
+                        d="M456.991736 557.336482c-107.598583 0-194.644628 74.956316-194.644629 166.838252s87.046045 166.838253 194.644629 166.838253c107.598583 0 194.644628-74.956316 194.644628-166.838253s-87.046045-166.838253-194.644628-166.838252zM391.707202 822.101535c-36.269185 0-66.493506-27.806375-66.493507-62.866588s29.015348-62.866588 66.493507-62.866588c36.269185 0 66.493506 27.806375 66.493506 62.866588S427.976387 822.101535 391.707202 822.101535z m93.090909-91.881936c-14.507674 0-26.597403-12.089728-26.597403-26.597403s12.089728-26.597403 26.597403-26.597403 26.597403 12.089728 26.597403 26.597403-12.089728 26.597403-26.597403 26.597403zM239.376623 281.690673C97.9268 394.125148-18.134593 600.859504 30.224321 661.308146c32.642267 41.105077 59.239669-19.343566 124.524203-89.46399 30.224321-32.642267 77.374262-54.403778 122.106258-90.672964 20.552538-16.92562 197.062574-35.060213 230.913813-35.060212 97.9268-99.135773 114.85242-207.943329 74.956316-258.720189-48.358914-59.239669-201.898465-16.92562-343.348288 94.299882z"
+                        p-id="2682"
+                    ></path>
+                    <path
+                        d="M808.802834 560.9634C906.729634 461.827627 911.565525 377.199528 870.460449 326.422668c-47.149941-60.448642-211.570248-32.642267-351.811098 78.583235"
+                        p-id="2683"
+                    ></path>
+                    <path
+                        d="M605.695396 353.020071c-14.507674 8.46281-25.38843 12.089728-29.015349 7.253837-1.208973-2.417946-1.208973-6.044864 1.208973-9.671783-16.92562-1.208973-33.85124-1.208973-50.776859-1.208973C235.749705 349.393152 0 500.514758 0 686.696576s235.749705 337.303424 527.112161 337.303424 527.112161-151.121606 527.11216-337.303424c0-170.465171-194.644628-309.497048-448.528925-333.676505zM481.171192 959.924439C275.645809 959.924439 108.807556 847.489965 108.807556 708.458087s166.838253-251.466352 372.363636-251.466351 372.363636 112.434475 372.363637 251.466351-166.838253 251.466352-372.363637 251.466352z"
+                        p-id="2684"
+                    ></path>
+                    <path
+                        d="M1021.582054 423.140496c-3.626919 0-6.044864 0-9.671782-1.208973-18.134593-4.835891-29.015348-24.179457-22.970485-42.31405 2.417946-7.253837 3.626919-16.92562 3.626919-29.015348 0-65.284534-53.194805-119.688312-119.688312-119.688312-19.343566 0-33.85124-15.716647-33.851239-33.851239s15.716647-33.85124 33.851239-33.85124c103.971665 0 187.390791 84.628099 187.390791 187.390791 0 18.134593-2.417946 33.85124-6.044864 48.358914-4.835891 14.507674-18.134593 24.179457-32.642267 24.179457z"
+                        p-id="2685"
+                    ></path>
+                    <path
+                        d="M1146.106257 473.917355c-2.417946 0-6.044864 0-8.46281-1.208972-20.552538-4.835891-32.642267-25.38843-27.806375-45.940969 6.044864-24.179457 8.46281-47.149941 8.46281-71.329397C1118.299882 201.898465 991.357733 74.956316 836.609209 74.956316c-20.552538 0-37.478158-16.92562-37.478158-37.478158S816.056671 0 836.609209 0c197.062574 0 356.646989 159.584416 356.646989 356.646989 0 29.015348-3.626919 59.239669-10.880755 88.255018-3.626919 18.134593-19.343566 29.015348-36.269186 29.015348z"
+                        p-id="2686"
+                    ></path>
+                </svg>
+            </a><i class="eva eva-copy mr-4 cursor-pointer hover:text-theme" title="Copy Link" data-clipboard-text="https://hugo-theme-luna.imiku.me/2020/02/17/progression.html/"></i><div class="group relative hidden cursor-pointer sm:inline-block">
+                <i title="QR Code" class="eva show-qrcode eva-smartphone hover:text-theme"></i>
+                <div
+                    class="qrcode-wrapper pointer-events-none absolute left-2/4 bottom-10 h-32 w-32 -translate-x-1/2 overflow-hidden rounded border border-gray-300 bg-white opacity-0 transition duration-300 ease-[ease] group-hover:opacity-100"
+                >
+                    <img class="h-full w-full" src="https://www.lofter.com/genBitmaxImage?url=https://hugo-theme-luna.imiku.me/2020/02/17/progression.html/" alt="QR Code" />
+                </div>
+            </div></div>
+<div class="border-b dark:border-darkBorder"></div><div class="flex justify-between px-2 py-4 text-xl md:px-6 md:text-2xl">
+    <div>
+        <a
+            href="/2019/09/18/one-room-survival.html/"
+            title="One Room Survival"
+            class="invisible flex cursor-pointer items-center text-gray-500 transition duration-300 ease-[ease] hover:text-theme dark:text-darkTextPlaceholder dark:hover:text-darkText"style="visibility: visible;">
+            <span class="flex items-center text-5xl opacity-70 dark:bg-opacity-100">
+                <i class="eva eva-chevron-left-outline"></i>
+            </span>
+            <span>Prev</span>
+        </a>
+    </div><div class="hidden items-center text-xs xl:flex">
+        Unless otherwise stated, this blog is licensed under 「
+        <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" target="_blank" rel="noopener noreferrer" class="text-theme">CC BY-NC-ND 4.0</a>
+        」
+    </div>
+    <div class="flex items-center text-sm xl:hidden">
+        <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" target="_blank" rel="noopener noreferrer" class="text-theme">
+            <img src="/Cc-by-nc-nd.svg" alt="CC BY-NC-ND 4.0" title="CC BY-NC-ND 4.0" class="w-24" />
+        </a>
+    </div>
+
+    <a
+        href="/2020/06/10/protect-the-sandcastle.html/"
+        title="Protect The Sandcastle"
+        class="invisible flex cursor-pointer items-center text-gray-500 transition duration-300 ease-[ease] hover:text-theme dark:text-darkTextPlaceholder dark:hover:text-darkText"style="visibility: visible;">
+        <span>Next</span>
+        <span class="flex items-center text-5xl opacity-70 dark:bg-opacity-100">
+            <i class="eva eva-chevron-right-outline"></i>
+        </span>
+    </a>
+</div>
+<div class="border-t py-6 px-6 md:px-8 dark:border-darkBorder">
+    <script src="https://giscus.app/client.js"
+    data-repo="Ice-Hazymoon/hugo-theme-luna"
+    data-repo-id="R_kgDOHQOwYw"
+    data-category="Comments"
+    data-category-id="DIC_kwDOHQOwY84CP0Sy"
+    data-mapping="title"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="light"
+    data-lang="en"
+    data-loading="false"
+    crossorigin="anonymous"
+    data-swup-reload-script
+    async
+>
+</script>
+
+<script>
+    (function () {
+        addEventListener("message", (e) => {
+            if (event.origin !== "https://giscus.app") return;
+            handler();
+        });
+        window.addEventListener("onThemeChange", handler);
+
+        function handler() {
+            if (document.documentElement.dataset.scheme === "light") {
+                setGiscusTheme('light');
+            } else {
+                setGiscusTheme('dark');
+            }
+        }
+    })();
+    
+    function setGiscusTheme(theme) {
+        let giscus = document.querySelector("iframe.giscus-frame");
+        if (giscus) {
+            giscus.contentWindow.postMessage(
+                {
+                    giscus: {
+                        setConfig: {
+                            theme: theme,
+                        },
+                    },
+                },
+                "https://giscus.app"
+            );
+        }
+    }
+</script>
+</div>
+
+        </div>
+    </div>
+</div>
+</div>
+                </main><footer>
+    <div
+        class="com-footer flex flex-col items-center border-t py-4 px-4 text-sm leading-none text-gray-600 dark:border-darkBorder dark:text-darkTextPlaceholder md:flex-row md:justify-between"
+    >
+        <div class="mb-2 flex items-center justify-between text-center md:mb-0">
+            <span class="">© 2017 - 2022</span>
+            <span class="mx-1.5 opacity-50"> | </span>Powered by <a data-no-swup class="mx-1 font-bold hover:text-theme" href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> <span class="text-xs opacity-70">❤</span> <a data-no-swup class="mx-1 font-bold hover:text-theme" href="https://github.com/Ice-Hazymoon/hugo-theme-luna" target="_blank" rel="noopener noreferrer">Luna</a></div>
+
+        <div class="flex items-center"><span class="noscript-hidden mx-1.5 hidden opacity-50 md:block"> | </span><a data-no-swup href="https://hugo-theme-luna.imiku.me/index.xml" target="_blank" class="mr-1.5 hover:text-theme">
+                    <span class=" md:hidden lg:inline"><svg t="1650887361919" class="mr-0.5 w-96 w-3 fill-current text-inherit inline-block align-top" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3091"><path d="M320.16155 831.918c0 70.738-57.344 128.082-128.082 128.082S63.99955 902.656 63.99955 831.918s57.344-128.082 128.082-128.082 128.08 57.346 128.08 128.082z m351.32 94.5c-16.708-309.2-264.37-557.174-573.9-573.9C79.31155 351.53 63.99955 366.21 63.99955 384.506v96.138c0 16.83 12.98 30.944 29.774 32.036 223.664 14.568 402.946 193.404 417.544 417.544 1.094 16.794 15.208 29.774 32.036 29.774h96.138c18.298 0.002 32.978-15.31 31.99-33.58z m288.498 0.576C943.19155 459.354 566.92955 80.89 97.00555 64.02 78.94555 63.372 63.99955 77.962 63.99955 96.032v96.136c0 17.25 13.67 31.29 30.906 31.998 382.358 15.678 689.254 322.632 704.93 704.93 0.706 17.236 14.746 30.906 31.998 30.906h96.136c18.068-0.002 32.658-14.948 32.01-33.008z" p-id="3092"></path></svg></span>
+                    <span>RSS</span>
+                </a><a data-no-swup href="https://hugo-theme-luna.imiku.me/sitemap.xml" target="_blank" class="mr-1.5 hover:text-theme">
+                    <span class=" md:hidden lg:inline"><svg t="1650887940556" class="mr-0.5 w-3 fill-current text-inherit inline-block align-top" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6291"><path d="M950.044 625.778h-68.266v-56.89c0-45.51-39.822-85.332-85.334-85.332h-256v-85.334h68.267c39.822 0 73.956-34.133 73.956-73.955V130.844c0-39.822-34.134-73.955-73.956-73.955H415.29c-39.822 0-73.956 34.133-73.956 73.955v193.423c0 39.822 34.134 73.955 73.956 73.955h68.267v85.334h-256c-45.512 0-85.334 39.822-85.334 85.333v56.889H73.956C34.133 625.778 0 659.91 0 699.733v193.423c0 39.822 34.133 73.955 73.956 73.955h193.422c39.822 0 73.955-34.133 73.955-73.955V699.733c0-39.822-34.133-73.955-73.955-73.955H199.11v-56.89c0-17.066 11.378-28.444 28.445-28.444h568.888c17.067 0 28.445 11.378 28.445 28.445v56.889h-68.267c-39.822 0-73.955 34.133-73.955 73.955v193.423c0 39.822 34.133 73.955 73.955 73.955h193.422c39.823 0 73.956-34.133 73.956-73.955V699.733c0-39.822-34.133-73.955-73.956-73.955z" p-id="6292"></path></svg></span>
+                    <span>Sitemap</span>
+                </a></div><div id="run-time" class="mt-2 flex-grow text-right md:mt-0">
+    <span>Run time: </span><b id="run-time-d">0</b>
+    <span class="text-xs">days</span>
+    <b id="run-time-h">0</b>
+    <span class="text-xs">h</span>
+    <b id="run-time-m">0</b>
+    <span class="text-xs">m</span>
+    <b id="run-time-s">0</b>
+    <span class="text-xs">s</span>
+</div>
+</div>
+
+    <script type="text/javascript">
+window.__theme = {
+    cdn: '',
+    pjax: true ,
+    isServer: false ,
+    $version:"",
+    lang: 'en-us',
+    imageZoom: true ,
+    lazyload: true ,
+    bionicReading: {
+        enabled: true ,
+        skipLinks: false ,
+        autoBionic: false ,
+        excludeWords:[],
+        excludeClasses:["github"],
+        excludeNodeNames:[],
+    },
+    katex: true ,
+    search: true ,
+    backtop: true ,
+    pangu: false ,
+    autoDarkMode: true ,
+    googleAnalytics:false,
+    hugoEncrypt: {
+        wrongPasswordText: 'Password is incorrect',
+        userStorage:window['sessionStorage'],
+    },
+    console: {
+        enabled: true ,
+        leftColor: '#dd6065',
+        rightColor: '#feb462',
+        leftText: 'crissNb',
+        rightText: 'Powered by Hugo ❤ Luna',
+    },
+    assets: {
+        error_svg: "\/images\/error.svg",
+        search_svg: "\/images\/search.svg",
+    },
+    i18n: {
+        copy: {
+            success: "Copy success",
+            failed: "Copy failed",
+            copyCode: "Copy code",
+        },
+        search: {
+            untitled: "Untitled",
+            loadFailure: "Initialization of the search engine failed",
+            input: "Type something...",
+        },
+        darkMode: {
+            dark: "Switch to dark mode",
+            light: "Switch to light mode"
+        }
+    },creatTime: "2017\/06\/12"}
+</script>
+<script type="text/javascript" src="/ts/main.37be8a59dd196c66cc46282b51b039580e7345372deb286d1478b8b5971da7b9.js" defer integrity="sha256-N76KWd0ZbGbMRigrUbA5WA5zRTct6yhtFHi4tZcdp7k="></script><script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+            navigator.serviceWorker.register('\/sw.js');
+        });
+    }
+</script>
+
+
+
+
+
+<script>
+    
+    
+</script>
+
+<script data-swup-reload-script>
+    
+    
+</script>
+</footer>
+</div>
+        </div><a
+        href="#nav"
+        title="Back to top"
+        id="back-top"
+        class="fixed right-6 bottom-9 z-10 translate-y-3 scale-90 cursor-pointer rounded-full bg-white opacity-0 transition duration-300 ease-[ease] dark:bg-darkBgAccent sm:scale-100"
+    >
+        <div class="relative">
+            <div class="absolute left-0 top-0 flex h-full w-full items-center justify-center text-xl">
+                <i class="eva eva-arrow-upward-outline"></i>
+            </div>
+            <svg id="svg" width="54" height="54" viewBox="0 0 54 54" preserveAspectRatio="xMinYMin meet">
+                <circle
+                    transform="rotate(-90, 27 , 27)"
+                    style="stroke-dasharray: 157, 157; stroke-dashoffset: 157;"
+                    cx="27"
+                    cy="27"
+                    r="25"
+                    fill="none"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                    stroke="var(--theme)"
+                />
+            </svg>
+        </div>
+    </a><div id="i18nlist"></div><noscript>
+    <style>
+        .dark-mode-switch,
+        #run-time,
+        .noscript-hidden,
+        [data-clipboard-text],
+        [data-lazyload] {
+            display: none;
+        }
+        #back-top {
+            opacity: 1;
+        }
+        .noscript-show {
+            display: initial;
+        }
+    </style>
+</noscript>
+</body>
+</html>
